@@ -203,7 +203,7 @@ mod test {
         assert_eq!(gen.input[0].sequence, MAX_SEQUENCE);
         assert_eq!(gen.output.len(), 1);
         assert_eq!(serialize(&gen.output[0].script_pubkey),
-                   Vec::from_hex("41040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9ac").unwrap());
+                   Vec::from_hex("4341040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9ac").unwrap());
         assert_eq!(gen.output[0].value, 1000000 * COIN_VALUE);
         assert_eq!(gen.lock_time, 0);
 
